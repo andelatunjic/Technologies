@@ -2,7 +2,6 @@ let tech = [];
 
 const add = () => {
   const newTech = document.getElementById("technology").value;
-
   if (newTech != "" && !isDuplicate(newTech)) {
     tech.push(newTech);
     populateGrid(newTech);
@@ -29,15 +28,15 @@ const cleanInputField = () => {
   document.getElementById("technology").value = "";
 };
 
-const remove = () => {
-  let grid = document.getElementById("gridContainer");
-  grid.innerHTML = "";
-  tech = [];
-};
-
 const populateGrid = (gridData) => {
   let grid = document.getElementById("gridContainer");
   const gridElement = document.createElement("p");
   gridElement.appendChild(document.createTextNode(gridData));
   grid.appendChild(gridElement);
+};
+
+const remove = () => {
+  let grid = document.getElementById("gridContainer");
+  grid.innerHTML = "";
+  tech = [];
 };
