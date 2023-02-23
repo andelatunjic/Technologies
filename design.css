@@ -1,7 +1,9 @@
-body{
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 80px;
+
+body {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 h1 {
@@ -17,37 +19,37 @@ form {
 
 input {
   margin-right: 30px;
-  padding: 10px 5px;
-  border-color: #BF3939;
+  padding: 10px 20px;
+  border-color: black;
   border-width: 1px;
-  border-radius: 4px;
+  border-radius: 5px;
   font-size: 18px;
 }
 
 input:focus {
   outline: none;
-  padding-left: 10px;
-}
-
-::placeholder{
-    font-size: 18px;
-    padding-left: 10px;
+  border-color: #bf3939;
 }
 
 .addButton {
-  color: #BF3939;
+  color: #bf3939;
   font-weight: bold;
-  border-color: #BF3939;
+  border-color: #bf3939;
   border-width: 1px;
-  border-radius: 4px;
+  border-radius: 5px;
   padding: 10px 30px;
   text-align: center;
   font-size: 18px;
-  background-color: #FCEDE8;
+  background-color: #fcede8;
+}
+
+.addButton:hover {
+  color: white;
+  background-color: #bf3939;
 }
 
 .removeButton {
-  color: #BF3939;
+  color: #bf3939;
   text-decoration: underline;
   font-size: 18px;
   border-style: none;
@@ -55,7 +57,7 @@ input:focus {
   background-color: white;
 }
 
-#gridContainer{
+#gridContainer {
   display: grid;
   grid-template-columns: auto auto;
   margin-top: 30px;
@@ -63,12 +65,11 @@ input:focus {
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 30px;
   text-align: center;
   background-color: white;
-
   border-radius: 10px;
   border-width: 1px;
   border-color: #f0eeeb;
@@ -78,4 +79,3 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-

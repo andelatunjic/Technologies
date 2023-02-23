@@ -10,10 +10,10 @@
     <link href="design.css" rel="stylesheet" type="text/css"/>
     <script src="logic.js"></script>
   </head>
-  <body onload="halo()">
+  <body>
     <h1>My technologies</h1>
-    <form name="technology" id="technologyForm" onsubmit="add()">
-      <input name="technology" type="text" id="technology" size="40" placeholder="Enter new technology..." />
+    <form name="technology" id="technologyForm" onsubmit="return add()">
+      <input name="technology" type="text" id="technology" size="40" maxlength="35" placeholder="Enter new technology..." />
       <input class="addButton" name="submit" type="submit" value="Add"/>
       <input class="removeButton" id="remove" name="remove" type="button" value="Remove all itmes" onclick="remove()"/>
     </form>
