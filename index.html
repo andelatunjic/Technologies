@@ -10,12 +10,13 @@
     <link href="design.css" rel="stylesheet" type="text/css"/>
     <script src="logic.js"></script>
   </head>
-  <body>
+  <body onload="halo()">
     <h1>My technologies</h1>
-    <form name="technology" id="technologyForm">
-      <input name="technology" type="text" id="technology" size="40" placeholder="Enter new technology..." autofocus/>
+    <form name="technology" id="technologyForm" onsubmit="add()">
+      <input name="technology" type="text" id="technology" size="40" placeholder="Enter new technology..." />
       <input class="addButton" name="submit" type="submit" value="Add"/>
-      <input class="removeButton" name="submit" type="submit" value="Remove all itmes"/>
+      <input class="removeButton" id="remove" name="remove" type="button" value="Remove all itmes" onclick="remove()"/>
     </form>
+    <div id="gridContainer"></div>
   </body>
 </html>
